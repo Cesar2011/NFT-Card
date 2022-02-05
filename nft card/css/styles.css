@@ -1,0 +1,131 @@
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cian: hsl(178, 100%, 50%);
+    --cian-transparent: hsla(178, 100%, 50%, 0.507);
+    --veryDarkBlue-mainBG: hsl(217, 54%, 11%);
+    --veryDarkBlue-cardBG: hsl(216, 50%, 16%); 
+    --veryDarkBlue-line: hsl(216, 50%, 16%);
+    --white: #fff;
+    --outfit: 'Outfit', sans-serif;
+}
+
+Body{
+    font-family: var(--outfit);
+    background-color: var(--veryDarkBlue-mainBG);
+    color: var(--white);
+    font-size: 18px;
+    height: 100vh;
+}
+
+h1{
+    font-size: 4rem;
+    padding: 0;
+}
+
+p{
+    margin-bottom: 1rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.flex{
+    display: flex;
+}
+
+.white-text{
+    color: var(--white)
+}
+
+.cian-text{
+    color: var(--cian);
+}
+
+.fw-400{
+    font-weight: 600;
+}
+
+.hover-text-cian:hover{
+    color: var(--cian);
+}
+
+.main-container{
+    padding-top: 8vh;
+}
+.card{
+    background-color: var(--veryDarkBlue-cardBG);
+    width: 20rem;
+    height: 35rem;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 1.3rem;
+    box-shadow: rgba(6, 8, 31, 0.35) 0px 10px 15px 15px;
+
+}
+
+.main-image{
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 20rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.main-image:hover{
+    background-image:url(../images/image-equilibrium.jpg);
+    background-position: center center;
+    background-size: contain;
+    box-shadow:inset 0 0 0 2000px var(--cian-transparent); /*---Overlay color**/
+}
+
+.hover-icon{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+
+.hover-icon img{
+    padding: 40% 0;
+}
+
+.hover-icon:hover{
+    opacity: 1;
+}
+
+.info{
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--soft-blue);
+    padding-bottom: 0.5rem;
+}
+
+.info img{
+    align-self: center;
+    margin-right: 8px;
+}
+
+.credits{
+    height: 2.5rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.credits img{
+    max-height: 100%;
+    max-width: 100%;
+    margin-right: 1rem;
+}
+
+.credits p{
+    font-size: 16px;
+}
+
+.attribution{
+    margin-top: 2rem;
+}
+
+
+
+
+
+
